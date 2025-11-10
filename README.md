@@ -1,73 +1,132 @@
-# React + TypeScript + Vite
+# Dog Food Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for a premium dog food brand built with React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Hero Section**: Eye-catching introduction with feature highlights and call-to-action
+- **Nutrition Section**: Detailed information about nutritional benefits
+- **Dog Food Benefits**: Comprehensive benefits section for pet owners
+- **Responsive Design**: Optimized for all device sizes
+- **Modern UI**: Clean, professional design with custom branding colors
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 19.2.0 with TypeScript
+- **Styling**: Tailwind CSS 4.1.17
+- **Build Tool**: Vite 7.2.2
+- **Icons & Assets**: Custom SVG and PNG assets
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js (version 16 or higher)
+- npm or yarn
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd my-app
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5174`
+
+### Build for Production
+
+```bash
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Preview Production Build
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run preview
 ```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── HeroSection.jsx       # Main hero section with features
+│   ├── Nutrition.jsx         # Nutrition information section
+│   ├── DogFoodBenefits.jsx   # Benefits section
+│   └── Feature.jsx           # Reusable feature component
+├── assets/                   # Images and icons
+│   ├── Frame.png            # Main hero image
+│   ├── vet.png              # Vet icon
+│   ├── food.png             # Food icon
+│   └── ...                  # Other assets
+├── App.jsx                  # Main app component
+└── index.css                # Global styles
+```
+
+## Key Components
+
+### HeroSection
+- Displays the main value proposition
+- Features four key selling points with custom icons
+- Includes call-to-action button with custom color (#EE6F4B)
+- Payment method icons for trust building
+
+### Feature Component
+- Reusable component for displaying feature items
+- Supports both emoji and image icons
+- Circular icon containers with custom backgrounds
+
+### Responsive Design
+- Mobile-first approach
+- Flexible layouts that adapt to different screen sizes
+- Optimized for desktop, tablet, and mobile devices
+
+## Customization
+
+### Colors
+- Primary button color: #EE6F4B
+- Background: White
+- Text colors: Various grays and blacks
+
+### Assets
+All images are stored in the `src/assets/` directory and imported as ES6 modules for optimal bundling.
+
+## Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
+
+### ESLint Configuration
+
+The project uses ESLint with React-specific rules. Configuration can be found in `eslint.config.js`.
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run tests and linting
+5. Submit a pull request
+
+## License
+
+This project is private and proprietary.
+
+## Support
+
+For support or questions, please contact the development team.

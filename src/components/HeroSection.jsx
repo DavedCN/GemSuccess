@@ -1,4 +1,3 @@
-// HeroSection.jsx
 import React from "react";
 import Feature from "./Feature";
 import Frame from "../assets/Frame.png";
