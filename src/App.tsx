@@ -7,6 +7,7 @@ export default function App() {
     <main className="w-screen min-h-screen overflow-x-hidden bg-white">
       <HeroSection />
       <Nutrition/>
+
       <DogFoodBenefits/>
     </main>
   );
