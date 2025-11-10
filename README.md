@@ -115,18 +115,3 @@ All images are stored in the `src/assets/` directory and imported as ES6 modules
 
 The project uses ESLint with React-specific rules. Configuration can be found in `eslint.config.js`.
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests and linting
-5. Submit a pull request
-
-## License
-
-This project is private and proprietary.
-
-## Support
-
-For support or questions, please contact the development team.
