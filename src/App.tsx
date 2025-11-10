@@ -1,4 +1,3 @@
-import React from "react";
 import HeroSection from "./components/HeroSection";
 import Nutrition from "./components/Nutrition";
 import DogFoodBenefits from "./components/DogFoodBenefits";
@@ -9,8 +8,6 @@ export default function App() {
       <HeroSection />
       <Nutrition/>
       <DogFoodBenefits/>
-      
-    
     </main>
   );
 }
